@@ -1,4 +1,4 @@
-package com.hacknode.inventoryservice.Dtos.Responses;
+package com.hacknode.inventoryservice.Dtos.Requests;
 
 
 import lombok.AllArgsConstructor;
@@ -10,8 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class InventoryResponse {
+public class InventoryUpdateRequest {
     private String skuCode;
-    private boolean isInStock;
-    private int availableQuantity;
+    private int quantityChange;
 }
