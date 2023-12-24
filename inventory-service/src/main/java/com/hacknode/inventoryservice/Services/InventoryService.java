@@ -7,6 +7,7 @@ import com.hacknode.inventoryservice.Exceptions.ProductNotFoundException;
 import com.hacknode.inventoryservice.Model.Inventory;
 import com.hacknode.inventoryservice.Repositories.InventoryRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -49,5 +50,9 @@ public class InventoryService {
         for (InventoryUpdateRequest request : updateRequests) {
             updateQuantity(request.getSkuCode(), request.getQuantityChange());
         }
+    }
+
+    public List<Inventory> getAllInventory() {
+        return inventoryRepository.findAll();
     }
 }
