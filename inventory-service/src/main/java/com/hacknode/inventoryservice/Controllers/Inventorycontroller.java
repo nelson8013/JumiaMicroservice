@@ -24,11 +24,6 @@ public class Inventorycontroller {
         return inventoryService.isInStock(skuCode);
     }
 
-    @PutMapping("/update")
-    public ResponseEntity<Void> updateInventoryQuantity(@RequestParam String skuCode, @RequestParam int quantityChange) {
-        inventoryService.updateQuantity(skuCode, quantityChange);
-        return ResponseEntity.noContent().build();
-    }
 
     @PutMapping("/bulk-update")
     public ResponseEntity<Void> bulkUpdateInventory(@RequestBody List<InventoryUpdateRequest> updateRequests) {
