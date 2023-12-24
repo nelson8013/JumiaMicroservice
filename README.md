@@ -5,12 +5,18 @@ Jumia is an online e-commerce platform in Nigeria.
 This is a fun microservice project that is built using the Spring Cloud and  uses third-party tools.
 
 ## Features
---Gateway: The Microservice will have an API Gateway that will receive all requests and channel them to the appropriate service.
---Communication: I use Kafka and RabbitMQ for A-synchronous communication between services,
---Security: I'll server the application with  an Authentication Server called Key Clock
---Secret Storage: I'll use Vault to store secrets.
---Distributed Tracing: I'll also use Zipkin for distributed tracing.
---Logging: For logging, I use Elastic Search, LogStash, and Kibana
+-- Gateway: 
+   The Microservice will have an API Gateway that will receive all requests and channel them to the appropriate service.
+-- Communication: 
+   I use Kafka and RabbitMQ for A-synchronous communication between services,
+-- Security: 
+   I'll server the application with  an Authentication Server called Key Clock
+-- Secret Storage: 
+   I'll use Vault to store secrets.
+-- Distributed Tracing: 
+   I'll also use Zipkin for distributed tracing.
+-- Logging: 
+   For logging, I use Elastic Search, LogStash, and Kibana
 
 
 ## Number of Services.
